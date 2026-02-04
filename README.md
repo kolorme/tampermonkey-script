@@ -1,6 +1,15 @@
-# Tampermonkey Scripts
+# Tampermonkey Script
 解决个人痛点的油猴脚本
 
 - B站音量精准控制（bilibili-volume-control）
 
   将B站视频上下键音量调节步长优化为1%，支持可视化提示
+
+
+- TickTick 中国节假日助手
+
+  国际版 TickTick 桌面月历看不到中国公历节假日，新建节假日清单曲线救国:
+  
+  一键获取当年节假日(含调休), 点击复制粘贴到任务输入框, 配合日期智能识别快速创建
+  
+  自动适配深浅色主题, 5秒倒计时弹窗不打扰
