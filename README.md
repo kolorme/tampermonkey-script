@@ -1,10 +1,12 @@
-# Tampermonkey Script
-解决个人痛点的油猴脚本
+# 解决个人痛点的篡改猴脚本 Tampermonkey Script 
+
+> ⚠️有些人也会把篡改猴(Tampermonkey)称作油猴(Greasemonkey), 尽管后者只是一款仅适用于 Firefox 浏览器的浏览器扩展程序
+
 
 - B站音量精准控制（bilibili-volume-control）
 
-  将B站视频上下键音量调节步长优化为1%，支持可视化提示
-
+  将B站视频上下键音量调节步长优化为 1%, 支持可视化提示
+---
 
 - TickTick 中国节假日助手
 
