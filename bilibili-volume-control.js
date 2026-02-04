@@ -5,11 +5,11 @@
 // @description  [增强版] 将B站视频音量调节步长优化为1%，支持可视化提示与键盘快捷操作。功能包含：1.📏上下箭头键1%精准调节 2.📊居中半透明音量提示 3.🖥️智能容器适配 4.🥣音量边界保护（0-100%）
 // @icon         data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAADIBAMAAABfdrOtAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAHlBMVEUAAAAQl9cQltsRltoRl9sQl9sSlNoSltsSltv////18jJPAAAACHRSTlMAIL/fn0Bgf6idWS0AAAABYktHRAnx2aXsAAAAB3RJTUUH6QMIFAs4r1LYLAAABIhJREFUeNrtm01z2jAQhg0FnKNDWsiRknaGI51A4UjStOOjk046HOlk8nF00mnhmIQQ9LMryZZsbGNb0pqBVu8FYdZ+rLU+1ithGFpaWlpaWlpaWrui/Q0w6uhT4YwSQnOraMgbhNCoaEgHQ7oFM6poAzU5JBCnYAjx1nPBjBqpyKJgCPWWWzBkE94ySUWeCoaMCWRSMETZWyW7l3WP6t4q45HPSTcZK/fEO3yBFyvVRL1tDcltDtIsKsTiUQlCbjOdou4tY4ayKKSuL0oMo+lB0Od1BmUEMJX4VUH94ryFOwqjnCT/jNS9FaLM3cK8RSidFMod1JxYG66lUG8tARiG0WCU2C1Tb7VAILwhxygzyAiCUSLDWBXOW2HKateH9BZRPYkC6i2iizgF2FtEV7EBBtpbRmiA+ciO2OSbBQoJBhh/GDMLCRwjw5gN7y1KYZ3yNy7/okXpa1VP28k6Qky9tjfUzNdYtj+4GZAOAtA8oyIQjKxOWoOBpPurskOQ0XZAnvaV1MwF6RpKMjVEQ9Ih1dNjCbV/CkFmcp2QpPDyQ2S7+kQAUpKFjLYNIj13tbYRsjZOWKcjCYhw6FbWEA3RkH8YcusUDylHMyHqkMYkatrB7/EWKKQZX4EjI/sAEvIWxSIlb8rpw0Hoy27kGfkz9AkQxH+hjub9Z/RoKKWnAmFpgseIqekdDpqYAoSnVWIn+nkwnmyTh3BGQtrpwPtlEIJ0ZSCckZSxZz/21SAlO4URUE6UIONUBqYMQ01MFjJMZ/CHT5uYLCSLwSlLeYg3dHxOPeOAV0USQoeO+9QT2MN35d3VWbOqEadM5CHNdibDb2KWQmfMpaZnLAqpiQUSjbZTPMSThgQqTVnp4tj1Sw89BxYyZruSqnxt0YwMBsqQKt+VRLYOeRXYi2SZlSEVxPL/e4hlZO/QaroeBNLll/auYaPVFRQQyIJDWhwCWhOTH7B5nVBk6wIIhDYqOvq/klINRdawlSElNsceonBpCQqh6yotHgEP/NITLGTmOccPX/BUNo5FleoQ6qbeFz9EQvMO8udDSEji6s3qshLAANlJgCyAISy6XpEDDfEjUuyjW8Z4NaAhvCouK0X3GkBA/Le6fjieA4cYpQd89/es9BxlQM3x++e8lLBHeEcCif8V0toqyPJGUFcSECnlgpQ3CJFeP9kIpCUAYVkCYbkiEFsSYolAKnJV+WqIQPBwLrGpgJ4oApGWhuwqRGa5P6RhLgiANgIZpUI2spfIhIG4qRDpLQWrctIb4HcIRnr+FVflHQ0KbGz6cnZ2doo/5394rHB9GdPtEJsMptPpA7n84PrHzc1lVlcKPZuFEc5ErFUdBSlIsf89kFcecsZeZlOhj5EkDcZIeI/nzGsjneynyGzIhyUGOcSnLM+JK+ZZpqQKg/MLJL6TP+j6r1mmdW4qGtkGQdFjlmkQCY4EIcG+KCfLMnjFt0QhZl5vBe/F4lu62XLWJIfpMM+IlSjvbw7v85h6y0H9PKaxU4/oNuc8auBqf5NhGEL/tbUkEVpaWlpaWlpaWoD6C17m5K2yQDovAAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDI1LTAzLTA4VDIwOjA5OjIzKzAwOjAw+eZ6UwAAACV0RVh0ZGF0ZTptb2RpZnkAMjAyNS0wMy0wOFQyMDowOToyMyswMDowMIi7wu8AAAAASUVORK5CYII=
 // @match        *://*.bilibili.com/*
-// @author       ezh
+// @author       kolorme
 // @version      20250309
 //
-// @homepage     https://github.com/eangzh/TampermonkeyScripts/bilibili-volume-control
-// @supportURL   https://github.com/eangzh/TampermonkeyScripts/issues
+// @homepage     https://github.com/kolorme/tampermonkey-script/bilibili-volume-control
+// @supportURL   https://github.com/kolorme/tampermonkey-script
 //
 // @grant        none
 // @license      MIT
@@ -129,4 +129,5 @@
 注意事项：
 - 依赖视频父容器的DOM结构，若B站页面结构更改可能需要调整
 - 如果页面存在多个video元素（如画中画），可能需要对其他视频元素做特殊处理
+
 */
